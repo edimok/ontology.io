@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://edimok.github.io/ontology.io/university.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://edimok.github.io/ontology.io/university.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Student"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#studentID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS103"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#CSModule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lecturer1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#first_name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Person"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#staffID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lecturer2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teaches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M204"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#last_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#MathModule"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#CSModule"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Lecturer"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#MathModule"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Student"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#CSModule"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Lecturer"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#MathModule"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Student"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#CSModule"/>
+        <NamedIndividual IRI="#CS101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#CSModule"/>
+        <NamedIndividual IRI="#CS103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Lecturer"/>
+        <NamedIndividual IRI="#Lecturer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Lecturer"/>
+        <NamedIndividual IRI="#Lecturer2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#MathModule"/>
+        <NamedIndividual IRI="#M201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#MathModule"/>
+        <NamedIndividual IRI="#M204"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Student"/>
+        <NamedIndividual IRI="#Student1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Student"/>
+        <NamedIndividual IRI="#Student2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Lecturer1"/>
+        <NamedIndividual IRI="#CS101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Lecturer1"/>
+        <NamedIndividual IRI="#M201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Lecturer2"/>
+        <NamedIndividual IRI="#CS103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Lecturer2"/>
+        <NamedIndividual IRI="#M204"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studies"/>
+        <NamedIndividual IRI="#Student1"/>
+        <NamedIndividual IRI="#CS103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studies"/>
+        <NamedIndividual IRI="#Student1"/>
+        <NamedIndividual IRI="#M204"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studies"/>
+        <NamedIndividual IRI="#Student2"/>
+        <NamedIndividual IRI="#CS103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studies"/>
+        <NamedIndividual IRI="#Student2"/>
+        <NamedIndividual IRI="#M204"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#first_name"/>
+        <NamedIndividual IRI="#Lecturer1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Larissa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#last_name"/>
+        <NamedIndividual IRI="#Lecturer1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Soladova</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="#Lecturer1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">417868</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#first_name"/>
+        <NamedIndividual IRI="#Lecturer2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Marc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#last_name"/>
+        <NamedIndividual IRI="#Lecturer2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="#Lecturer2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#first_name"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Josef</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#last_name"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Baker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentID"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">266481</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#first_name"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">John</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#last_name"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Edi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentID"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22231</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Lecturer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Module"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#first_name"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#last_name"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#staffID"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Lecturer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#studentID"/>
+        <Class IRI="https://tamla.gitlab.io/jekyll/university.owl#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#first_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#last_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#staffID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#studentID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
