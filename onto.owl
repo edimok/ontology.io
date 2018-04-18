@@ -1,0 +1,10 @@
+<!DOCTYPE Ontology [
+    <!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY vin  "http://www.example.org/wine#" >
+    <!ENTITY food "http://www.example.org/food#" > ]>
+<owlx:Ontology owlx:name="http://www.example.org/wine" 
+  xmlns:owlx="http://www.w3.org/2003/05/owl-xml">
+  
+  <!-- OWL statements --> 
+
+</owlx:Ontology> 
